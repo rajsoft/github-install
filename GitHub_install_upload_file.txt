@@ -1,0 +1,52 @@
+Install Github on Linux System
+
+//Install the git hub
+sudo apt-get install git-core
+
+//Download Github
+wget http://kernel.org/pub/software/scm/git/git-1.7.2.3.tar.gz
+
+//Extract tar File
+tar -xvf git-1.7.2.3.tar.gz
+
+cd git-1.7.2.3/
+
+//Install the Github with some library
+$sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-
+dev libssl-dev
+
+//Make localization
+make prefix=/usr/local all
+
+//Set local prefix
+$sudo make prefix=/usr/local install
+
+
+-------------------------------------------------------------------------------
+
+Upload All Updated File on Githug by command linei
+
+//Download the Repository
+git clone ghttps://github.com/sdibsl/TestApp.git
+
+//Goto Folder
+cd TestApp (Folder Name)
+
+git fetch
+
+//Inisilize
+git init
+
+//Update any file or create file/folder
+touch read_upload_git_data.txt
+
+//Add all updated File
+git add -A
+
+//Ready for upload
+git commit -m 'Comment for new file added'
+
+//Transfer file to github
+git push origin master
+
+
